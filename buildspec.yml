@@ -21,7 +21,7 @@ phases:
       - echo Build completed on `date`   
       - docker push 860061945305.dkr.ecr.ap-south-1.amazonaws.com/2040566-pms-pensioner-detail-service-ecr:detail
       - echo Writing definition files
-      - printf '[{"name":"pms-authorization-service-container","imageUri":"%s"}]' 860061945305.dkr.ecr.ap-south-1.amazonaws.com/2040566-pms-pensioner-detail-service-ecr:detail > taskdefinition.json
+      - printf '[{"name":"pms-pensioner-detail-service-container-2040566","imageUri":"%s"}]' 860061945305.dkr.ecr.ap-south-1.amazonaws.com/2040566-pms-pensioner-detail-service-ecr:detail > taskdefinition.json
 
 artifacts:
   files: taskdefinition.json
